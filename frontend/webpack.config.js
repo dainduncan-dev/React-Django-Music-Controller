@@ -6,7 +6,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./static/frontend"),
     filename: "[name].js",
+    sourceMapFilename: "[name].js.map"
   },
+  devtool: "source-map",
   module: {
     rules: [
       {
@@ -23,7 +25,10 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      "process.env.NODE_ENV" : JSON.stringify('production')
+      "process.env": {
+        // This has effect on the react lib size
+        NODE_ENV: JSON.stringify("production"),
+      },
     }),
   ],
 };
