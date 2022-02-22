@@ -38,7 +38,7 @@ def is_spotify_authenticated(session_key):
     return False
 
 def refresh_spotify_token(session_key):
-    refresh_token = get_user_token(session_key).refresh_token
+    refresh_token = get_user_tokens(session_key).refresh_token
 
     response = post('https://accounts.spotify.com/api/token', data={
         'grant_type': 'refresh_token',
