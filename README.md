@@ -2,6 +2,8 @@
 
 Spotify Music Controller using Django and React.
 
+Tutorial: https://www.youtube.com/watch?v=JD-age0BPVo&list=PLzMcBGfZo4-kCLWnGmK0jUBmGLaJxvi4j
+
 ## Setup Instructions
 ## Install required Python modules
 
